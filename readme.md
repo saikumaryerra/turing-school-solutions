@@ -1,5 +1,6 @@
 ---
-title: CSS Layout Challenge
+title: CSS Layout Challenge Turing School Solutions
+
 length:
 tags: css, layout, positioning
 ---
@@ -124,3 +125,6 @@ div {
 ##### Challenge 15:
 
 ![challenge 15](images/css15.png)
+
+
+##solution in index.html
