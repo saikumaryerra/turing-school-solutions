@@ -3,12 +3,157 @@
 
 <head>
     <title>Home</title>
-    <meta charset="ISO-8859-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+    .flex-div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .main-div {
+        width: 500px;
+        height: 500px;
+        background-color: white;
+        border: 3px solid red;
+        position: relative;
+        margin-bottom: 1%;
+    }
+
+    .child-div {
+        width: 20%;
+        height: 20%;
+        background-color: black;
+        color: white;
+        /*margin: 1%;*/
+    }
+    </style>
 </head>
 
 <body>
-    
+    <!-- to make it easier giving inline stylings where necessary-->
+    <div class="flex-div">
+        <div>
+            <h3>css1.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="position:absolute; ">first</div>
+                <div class="child-div" style="float: right;">second</div>
+                <div class="child-div" style="float: right;">third</div>
+            </div>
+        </div>
+        <div>
+            <h3>css2.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="position:absolute;">first</div>
+                <div class="child-div" style="position:absolute;left: 40%;right: 40%;top: 40%;">second</div>
+                <div class="child-div" style="position:absolute;bottom: 0;right: 0;">third</div>
+            </div>
+        </div>
+        <div>
+            <h3>css3.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="width: 40%;height: 40%;background-color: #3a3a3c;position: absolute;top: 30%;left: 30%;">first</div>
+                <div class="child-div" style="position: absolute;top: 40%;left: 40%;">second</div>
+            </div>
+        </div>
+        <div>
+            <h3>css4.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="">first</div>
+                <div class="child-div" style="background-color: #3a3a3c;position: absolute;top: 10%;left: 10%;">second</div>
+            </div>
+        </div>
+        <div>
+            <h3>css5.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="position: absolute;right: 0;">first</div>
+                <div class="child-div" style="position: absolute;left: 40%;top: 40%;">second</div>
+                <div class="child-div" style="position: absolute;bottom: 0;">third</div>
+            </div>
+        </div>
+        <div>
+            <h3>css6.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="position:absolute;width: 70%;height: 30%;background-color:  grey ;bottom: 0;right: 0;">first
+                    <div class="child-div" style="position: absolute;right: 0;top: 0;width: 28.571%;height: 66.66%;">second</div>
+                    <div class="child-div" style="position: absolute;left:0;bottom: 0;width: 28.571%;height: 66.66%;">third</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css7.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="width: 40%;height: 40%;background-color: #3a3a3c; position: relative;">first<div class="child-div" style="position: absolute;bottom: 0;right: 0;width: 50%;height: 50%;">second</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css8.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="width: 40%;height: 40%;background-color: #3a3a3c; position: relative;">first<div class="child-div" style="position: absolute;top: 0;right: 0;width: 50%;height: 50%;">second</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css9.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="width: 30%;height: 60%;background-color:  grey;position: relative;">
+                    <div class="child-div" style="width: 66.66%;height: 33.33%;position: absolute;right: 16.667%;">second</div>first
+                    <div class="child-div" style="width: 66.66%;height: 33.33%;position: absolute;right: 16.667%;bottom: 0;">third</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css10.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="height: 30%;width: 70%;background-color:  grey;position: relative;">
+                    <div class="child-div" style="height:  66.66%;width: 28.571%;position: absolute;top: 16.667%;left: 7.142%;">second</div>first
+                    <div class="child-div" style="height: 66.66%;width: 28.571%;position: absolute;top: 16.667%;right:7.142%;">third</div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css11.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="height: 80%;width: 40%;background-color:  grey;position: relative;">first
+                    <div class="child-div" style="width: 80%;height: 50%;position: absolute;bottom: 0;right: 0;">second<div class="child-div" style="width: 75%;height: 60%;background-color: grey;position: absolute;right: 5%;bottom: 5%;">third</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css12.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="height: 80%;width: 40%;background-color:  darkgrey;position: relative;">first
+                    <div class="child-div" style="width: 80%;height: 50%;position: absolute;bottom: 0;left: 60%;">second<div class="child-div" style="width: 75%;height: 60%;background-color: grey;position: absolute;top: 60%;right: 50%;">third</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css13.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="position: relative;">first
+                    <div class="child-div" style="background-color: grey;position: absolute;top: 50%;left: 50%;width: 100%;height: 100%;">second
+                        <div class="child-div" style="position: absolute;top: 50%;left: 50%;width: 100%;height: 100%;">third
+                            <div class="child-div" style="background-color: grey;position: absolute;top: 50%;left: 50%;width: 100%;height: 100%;">four
+                                <div class="child-div" style="position: absolute;top: 50%;left: 50%;width: 100%;height: 100%;">five
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3>css14.png</h3>
+            <div class="main-div">
+                <div class="child-div" style="width: 40%;height: 40%;background-color: #3a3a3c; position: relative;float: right;">first<div class="child-div" style="position: absolute;bottom: 0;left: 0;width: 50%;height: 50%;">second</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
